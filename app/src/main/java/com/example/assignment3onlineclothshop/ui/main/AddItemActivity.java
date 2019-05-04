@@ -40,8 +40,8 @@ public class AddItemActivity extends AppCompatActivity {
     public void addItem(){
         try{
             PrintStream printStream = new PrintStream(openFileOutput("items.txt",MODE_PRIVATE | MODE_APPEND));
-            printStream.println(name.getText().toString() + "->"+price.getText().toString()
-                    + "->"+imageName.getText().toString()+"->"+description.getText().toString());
+            printStream.println(name.getText().toString() + "->"+ price.getText().toString()
+                    + "->"+ imageName.getText().toString()+"->"+ description.getText().toString());
             Toast.makeText(this, "Saved to "+ getFilesDir(), Toast.LENGTH_SHORT).show();
         }catch (IOException e){
             Log.d("check", "Error: " + e.toString());

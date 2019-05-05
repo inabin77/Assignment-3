@@ -116,13 +116,16 @@ public class RegistrationFragment extends Fragment implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
+        if ((name.getText().toString().length()==0)||(email.getText().toString().length()==0)||(password.getText().toString().length()==0)){
 
-        signUp();
+            Toast.makeText(getActivity(), "Fill all Text Fields", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            signUp();
+        }
     }
 
-
     private void signUp(){
-
 
         preferences= getActivity().getSharedPreferences("User", Context.MODE_PRIVATE);
         SharedPreferences.Editor mEditor = preferences.edit();

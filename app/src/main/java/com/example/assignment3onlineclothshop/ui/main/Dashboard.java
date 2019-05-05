@@ -17,7 +17,7 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        addItem = findViewById(R.id.btnAdd);
+        addItem = findViewById(R.id.btnAddItem);
         showItems = findViewById(R.id.btnShowItems);
 
 

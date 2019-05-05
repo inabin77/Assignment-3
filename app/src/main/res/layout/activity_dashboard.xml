@@ -6,19 +6,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".ui.main.Dashboard">
+    tools:context=".ui.main.Dashboard"
+    android:background="@drawable/nbclothing">
 
 
 
     <Button
-        android:id="@+id/btnAdd"
+        android:id="@+id/btnAddItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ADD ITEM"/>
+        android:text="ADD CLOTHES"/>
     <Button
         android:id="@+id/btnShowItems"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SHOW ITEMS"/>
+        android:text="SHOW CLOTHES"/>
 
 </LinearLayout>
